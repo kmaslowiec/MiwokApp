@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background"
+    >
+
+    <ImageView
+        android:layout_width="@dimen/icon_x_y"
+        android:layout_height="@dimen/icon_x_y"
+        android:id="@+id/picture"
+        android:src="@mipmap/ic_launcher"
+        android:padding="@dimen/padding"
+
+        />
+
+    <!-- TEXT LAYOUT -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/text_background"
+
+        >
+
+        <TextView
+            android:id="@+id/topWord"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+
+
+
+            tools:text="@string/lutti" />
+
+        <TextView
+            android:id="@+id/bottomWord"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topWord"
+
+            android:textStyle="normal"
+
+
+            tools:text="@string/one" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:maxHeight="@dimen/pic_size"
+            android:src="@drawable/play"
+
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+
+             />
+
+    </RelativeLayout>
+
+    <!-- END TEXT LAYOUT -->
+
+</LinearLayout>
